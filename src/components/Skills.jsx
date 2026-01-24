@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
 import {
     SiCplusplus, SiPython, SiJavascript,
-    SiReact, SiNodedotjs, SiFirebase, SiGit, SiAndroidstudio
+    SiReact, SiNodedotjs, SiFirebase, SiGit, SiAndroidstudio,
+    SiKubernetes, SiTerraform, SiDocker
 } from 'react-icons/si';
-import { FaJava, FaCode } from 'react-icons/fa';
+import { FaJava, FaCode, FaNetworkWired, FaServer } from 'react-icons/fa';
+import { MdDevicesOther } from 'react-icons/md';
 
 const Skills = () => {
     const skillCategories = [
@@ -36,6 +38,18 @@ const Skills = () => {
                 { name: 'Android Studio', icon: SiAndroidstudio, color: 'text-green-400' },
             ],
         },
+        {
+            title: 'Cloud Computing',
+            icon: '☁️',
+            skills: [
+                { name: 'Networking', icon: FaNetworkWired, color: 'text-purple-400' },
+                { name: 'Operating System', icon: FaServer, color: 'text-gray-400' },
+                { name: 'Kubernetes', icon: SiKubernetes, color: 'text-blue-400' },
+                { name: 'Terraform', icon: SiTerraform, color: 'text-purple-500' },
+                { name: 'Docker', icon: SiDocker, color: 'text-blue-500' },
+                { name: 'CI/CD Pipeline', icon: MdDevicesOther, color: 'text-green-400' },
+            ],
+        },
     ];
 
     return (
@@ -55,7 +69,7 @@ const Skills = () => {
                     </p>
                 </motion.div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {skillCategories.map((category, catIndex) => (
                         <motion.div
                             key={catIndex}
