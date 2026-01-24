@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans antialiased;
+    background: linear-gradient(to bottom, #000000, #0a0a0a, #000000);
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-neon-cyan to-neon-purple rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply from-neon-purple to-neon-pink;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-neon-cyan to-neon-purple text-black font-bold rounded-lg hover:scale-105 hover:shadow-2xl hover:shadow-neon-cyan/50 transition-all duration-300 cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 border-2 border-neon-cyan text-neon-cyan font-bold rounded-lg hover:bg-neon-cyan hover:text-black hover:scale-105 transition-all duration-300 cursor-pointer;
+  }
+
+  .card {
+    @apply bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-6 border border-gray-700 hover:border-neon-cyan transition-all duration-300 hover:shadow-xl hover:shadow-neon-cyan/20;
+  }
+
+  .section-title {
+    @apply text-5xl md:text-6xl font-display font-black mb-4 bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink bg-clip-text text-transparent;
+  }
+
+  .glow-text {
+    @apply text-neon-cyan;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+
+  .neon-border {
+    @apply border-2 border-neon-cyan;
+    box-shadow: 0 0 10px #00ffff, inset 0 0 10px #00ffff;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink bg-clip-text text-transparent;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
