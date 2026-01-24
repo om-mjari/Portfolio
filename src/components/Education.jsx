@@ -17,20 +17,6 @@ const Education = () => {
             grade: 'CGPA: 8.37',
             icon: '🎓',
         },
-        {
-            degree: 'XII (GSEB)',
-            institution: 'Higher Secondary',
-            period: '2022',
-            grade: '81%',
-            icon: '📚',
-        },
-        {
-            degree: 'X (GSEB)',
-            institution: 'Secondary School',
-            period: '2020',
-            grade: '80.50%',
-            icon: '📖',
-        },
     ];
 
     return (

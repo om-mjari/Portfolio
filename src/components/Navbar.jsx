@@ -10,7 +10,6 @@ const Navbar = () => {
     const navItems = [
         { name: 'Home', href: '#home' },
         { name: 'About', href: '#about' },
-        { name: 'Education', href: '#education' },
         { name: 'Projects', href: '#projects' },
         { name: 'Skills', href: '#skills' },
         { name: 'Achievements', href: '#achievements' },
@@ -63,8 +62,8 @@ const Navbar = () => {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                        ? 'bg-black/90 backdrop-blur-lg border-b border-neon-cyan/20 shadow-lg shadow-neon-cyan/10'
-                        : 'bg-transparent'
+                    ? 'bg-black/90 backdrop-blur-lg border-b border-neon-cyan/20 shadow-lg shadow-neon-cyan/10'
+                    : 'bg-transparent'
                     }`}
             >
                 <div className="container mx-auto px-6">
@@ -96,8 +95,8 @@ const Navbar = () => {
                                         scrollToSection(item.href);
                                     }}
                                     className={`relative px-4 py-2 text-sm font-semibold transition-all duration-300 ${activeSection === item.href.substring(1)
-                                            ? 'text-neon-cyan'
-                                            : 'text-gray-300 hover:text-white'
+                                        ? 'text-neon-cyan'
+                                        : 'text-gray-300 hover:text-white'
                                         }`}
                                     initial={{ opacity: 0, y: -20 }}
                                     animate={{ opacity: 1, y: 0 }}
@@ -166,8 +165,8 @@ const Navbar = () => {
                                             scrollToSection(item.href);
                                         }}
                                         className={`py-4 text-lg font-semibold border-b border-gray-800 transition-all duration-300 ${activeSection === item.href.substring(1)
-                                                ? 'text-neon-cyan'
-                                                : 'text-gray-300 hover:text-white hover:pl-2'
+                                            ? 'text-neon-cyan'
+                                            : 'text-gray-300 hover:text-white hover:pl-2'
                                             }`}
                                         initial={{ opacity: 0, x: 50 }}
                                         animate={{ opacity: 1, x: 0 }}
