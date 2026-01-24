@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt, FaRocket } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt, FaRocket, FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
     return (
-        <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-grid">
+        <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-grid">
             {/* Animated background particles */}
             <div className="absolute inset-0 overflow-hidden">
                 {[...Array(20)].map((_, i) => (
@@ -74,7 +74,15 @@ const Hero = () => {
                             <a href="#projects" className="btn-primary">
                                 View Projects
                             </a>
-
+                            <a
+                                href="/resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn-secondary flex items-center gap-2"
+                            >
+                                <FaDownload />
+                                Resume
+                            </a>
                         </motion.div>
 
                         {/* Quick Contact Icons */}

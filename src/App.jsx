@@ -1,3 +1,4 @@
+import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Education from './components/Education'
@@ -12,6 +13,7 @@ import './index.css'
 function App() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      <Navbar />
       <Hero />
       <About />
       <Education />
