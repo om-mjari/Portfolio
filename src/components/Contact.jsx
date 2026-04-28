@@ -44,7 +44,7 @@ const Contact = () => {
     ];
 
     return (
-        <section id="contact" className="py-20 bg-black/50 relative overflow-hidden">
+        <section id="contact" className="py-20 bg-white/60 relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -54,8 +54,8 @@ const Contact = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="section-title">Get In Touch</h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto mb-4"></div>
-                    <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+                    <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-neon-purple mx-auto mb-4"></div>
+                    <p className="text-slate-500 text-lg max-w-2xl mx-auto">
                         Let's connect! I'm always open to discussing new opportunities and collaborations.
                     </p>
                 </motion.div>
@@ -74,17 +74,17 @@ const Contact = () => {
                             >
                                 {info.link ? (
                                     <a href={info.link} className="block">
-                                        <div className="card text-center p-6 h-full hover:border-neon-cyan cursor-pointer">
+                                        <div className="card text-center p-6 h-full hover:border-primary-300 cursor-pointer">
                                             <info.icon className={`text-4xl ${info.color} mx-auto mb-4`} />
-                                            <h4 className="text-lg font-bold text-white mb-2">{info.label}</h4>
-                                            <p className="text-gray-400 text-sm break-all">{info.value}</p>
+                                            <h4 className="text-lg font-bold text-slate-900 mb-2">{info.label}</h4>
+                                            <p className="text-slate-500 text-sm break-all">{info.value}</p>
                                         </div>
                                     </a>
                                 ) : (
                                     <div className="card text-center p-6 h-full">
                                         <info.icon className={`text-4xl ${info.color} mx-auto mb-4`} />
-                                        <h4 className="text-lg font-bold text-white mb-2">{info.label}</h4>
-                                        <p className="text-gray-400 text-sm">{info.value}</p>
+                                        <h4 className="text-lg font-bold text-slate-900 mb-2">{info.label}</h4>
+                                        <p className="text-slate-500 text-sm">{info.value}</p>
                                     </div>
                                 )}
                             </motion.div>
@@ -99,7 +99,7 @@ const Contact = () => {
                         transition={{ duration: 0.6, delay: 0.3 }}
                         className="card p-8"
                     >
-                        <h3 className="text-2xl font-bold text-white mb-6 text-center">
+                        <h3 className="text-2xl font-bold text-slate-900 mb-6 text-center">
                             Connect on Social Media
                         </h3>
                         <div className="flex flex-col md:flex-row gap-4 justify-center">
@@ -110,12 +110,12 @@ const Contact = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     whileHover={{ scale: 1.05 }}
-                                    className={`flex items-center gap-4 px-6 py-4 bg-gray-800 rounded-lg border border-gray-700 hover:border-neon-cyan transition-all duration-300 ${social.color} group`}
+                                    className={`flex items-center gap-4 px-6 py-4 bg-slate-50 rounded-2xl border border-slate-200 hover:border-primary-300 transition-all duration-300 ${social.color} group`}
                                 >
-                                    <social.icon className="text-3xl text-neon-cyan group-hover:scale-110 transition-transform" />
+                                    <social.icon className="text-3xl text-primary-600 group-hover:scale-110 transition-transform" />
                                     <div className="text-left">
-                                        <p className="text-sm text-gray-400">{social.label}</p>
-                                        <p className="text-white font-semibold">{social.username}</p>
+                                        <p className="text-sm text-slate-500">{social.label}</p>
+                                        <p className="text-slate-900 font-semibold">{social.username}</p>
                                     </div>
                                 </motion.a>
                             ))}

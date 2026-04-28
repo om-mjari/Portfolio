@@ -62,7 +62,7 @@ const Navbar = () => {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-black/90 backdrop-blur-lg border-b border-neon-cyan/20 shadow-lg shadow-neon-cyan/10'
+                    ? 'bg-white/80 backdrop-blur-xl border-b border-white/70 shadow-[0_10px_40px_-20px_rgba(51,87,132,0.25)]'
                     : 'bg-transparent'
                     }`}
             >
@@ -79,8 +79,8 @@ const Navbar = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            <FaRocket className="text-neon-cyan" />
-                            <span className="text-white">OM</span>
+                            <FaRocket className="text-primary-500" />
+                            <span className="text-slate-900">OM</span>
                             <span className="glow-text">JARIWALA</span>
                         </motion.a>
 
@@ -95,8 +95,8 @@ const Navbar = () => {
                                         scrollToSection(item.href);
                                     }}
                                     className={`relative px-4 py-2 text-sm font-semibold transition-all duration-300 ${activeSection === item.href.substring(1)
-                                        ? 'text-neon-cyan'
-                                        : 'text-gray-300 hover:text-white'
+                                        ? 'text-primary-700'
+                                        : 'text-slate-600 hover:text-slate-900'
                                         }`}
                                     initial={{ opacity: 0, y: -20 }}
                                     animate={{ opacity: 1, y: 0 }}
@@ -107,7 +107,7 @@ const Navbar = () => {
                                     {activeSection === item.href.substring(1) && (
                                         <motion.div
                                             layoutId="activeSection"
-                                            className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-neon-cyan to-neon-purple"
+                                            className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-500 to-neon-purple"
                                             initial={false}
                                             transition={{ type: "spring", stiffness: 380, damping: 30 }}
                                         />
@@ -118,7 +118,7 @@ const Navbar = () => {
 
                         {/* Mobile Menu Button */}
                         <motion.button
-                            className="md:hidden text-3xl text-neon-cyan"
+                            className="md:hidden text-3xl text-primary-600"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                             whileTap={{ scale: 0.9 }}
                         >
@@ -143,13 +143,13 @@ const Navbar = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+                            className="absolute inset-0 bg-slate-950/20 backdrop-blur-sm"
                             onClick={() => setIsMobileMenuOpen(false)}
                         />
 
                         {/* Menu Content */}
                         <motion.div
-                            className="absolute right-0 top-0 bottom-0 w-64 bg-gradient-to-br from-gray-900 to-black border-l border-neon-cyan/30 shadow-2xl shadow-neon-cyan/20"
+                            className="absolute right-0 top-0 bottom-0 w-64 bg-white border-l border-slate-100 shadow-2xl shadow-slate-300/40"
                             initial={{ x: '100%' }}
                             animate={{ x: 0 }}
                             exit={{ x: '100%' }}
@@ -165,8 +165,8 @@ const Navbar = () => {
                                             scrollToSection(item.href);
                                         }}
                                         className={`py-4 text-lg font-semibold border-b border-gray-800 transition-all duration-300 ${activeSection === item.href.substring(1)
-                                            ? 'text-neon-cyan'
-                                            : 'text-gray-300 hover:text-white hover:pl-2'
+                                            ? 'text-primary-700'
+                                            : 'text-slate-600 hover:text-slate-900 hover:pl-2'
                                             }`}
                                         initial={{ opacity: 0, x: 50 }}
                                         animate={{ opacity: 1, x: 0 }}

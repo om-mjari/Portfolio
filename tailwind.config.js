@@ -8,22 +8,22 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
+          50: '#f5f9ff',
+          100: '#e8f2ff',
+          200: '#cfe4ff',
+          300: '#a7d0ff',
+          400: '#7fb8ff',
+          500: '#5b9dff',
+          600: '#417ff0',
+          700: '#3564c7',
+          800: '#2f4f9c',
+          900: '#243c75',
         },
         neon: {
-          cyan: '#00ffff',
-          pink: '#ff00ff',
-          green: '#00ff00',
-          purple: '#a855f7',
+          cyan: '#5fb6ff',
+          pink: '#c8a4ff',
+          green: '#61cbb5',
+          purple: '#7a86ff',
         }
       },
       fontFamily: {
@@ -35,6 +35,7 @@ export default {
         'glow': 'glow 2s ease-in-out infinite alternate',
         'slide-up': 'slideUp 0.5s ease-out',
         'fade-in': 'fadeIn 0.6s ease-out',
+        'drift': 'drift 14s ease-in-out infinite',
       },
       keyframes: {
         float: {
@@ -52,6 +53,10 @@ export default {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        drift: {
+          '0%, 100%': { transform: 'translateX(0px) translateY(0px)' },
+          '50%': { transform: 'translateX(14px) translateY(-10px)' },
         },
       },
     },

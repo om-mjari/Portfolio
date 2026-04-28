@@ -67,12 +67,12 @@ const Achievements = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="section-title">Achievements & Certifications</h2>
-                    <div className="w-24 h-1 bg-gradient-to-r from-neon-cyan to-neon-purple mx-auto"></div>
+                    <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-neon-purple mx-auto"></div>
                 </motion.div>
 
                 {/* Achievements Grid */}
                 <div className="mb-16">
-                    <h3 className="text-3xl font-bold text-white mb-8 text-center">
+                    <h3 className="text-3xl font-bold text-slate-900 mb-8 text-center">
                         <span className="text-gradient">Achievements</span>
                     </h3>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -89,8 +89,8 @@ const Achievements = () => {
                                 <div className={`w-16 h-16 ${achievement.bgColor} rounded-full flex items-center justify-center mx-auto mb-4`}>
                                     <achievement.icon className={`text-3xl ${achievement.color}`} />
                                 </div>
-                                <h4 className="text-xl font-bold text-white mb-2">{achievement.title}</h4>
-                                <p className="text-gray-400 text-sm">{achievement.description}</p>
+                                <h4 className="text-xl font-bold text-slate-900 mb-2">{achievement.title}</h4>
+                                <p className="text-slate-500 text-sm">{achievement.description}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -98,7 +98,7 @@ const Achievements = () => {
 
                 {/* Certifications Grid */}
                 <div>
-                    <h3 className="text-3xl font-bold text-white mb-8 text-center">
+                    <h3 className="text-3xl font-bold text-slate-900 mb-8 text-center">
                         <span className="text-gradient">Certifications</span>
                     </h3>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -113,8 +113,8 @@ const Achievements = () => {
                                 className="card p-6 border-l-4 border-neon-purple"
                             >
                                 <div className="text-4xl mb-3">{cert.icon}</div>
-                                <h4 className="text-lg font-bold text-white mb-2">{cert.title}</h4>
-                                <p className="text-neon-cyan text-sm">{cert.issuer}</p>
+                                <h4 className="text-lg font-bold text-slate-900 mb-2">{cert.title}</h4>
+                                <p className="text-primary-700 text-sm">{cert.issuer}</p>
                             </motion.div>
                         ))}
                     </div>
