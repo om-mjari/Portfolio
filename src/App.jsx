@@ -11,9 +11,7 @@ import './index.css';
 
 function App() {
   return (
-    <div className="min-h-screen relative bg-[#0a0f1c] text-slate-100 
-    overflow-x-hidden selection:bg-neon-cyan/30 selection:text-white">
-
+    <div className="min-h-screen relative bg-white text-slate-900 overflow-x-hidden selection:bg-blue-200 selection:text-black">
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <ThreeDBackground />
       </div>

@@ -1,4 +1,4 @@
-(full cinematic 3D background, glassmorphism, neon, pipelines, floating icons, raytracing, depth)
+// 3D cloud/DevOps cinematic background
 import { motion } from 'framer-motion';
 
 // 3D cloud/DevOps cinematic background
