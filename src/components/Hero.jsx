@@ -92,7 +92,7 @@ const Hero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4 }}
                         >
-                            Buil scalable,{' '}
+                            Bui scalable,{' '}
                             <span className="text-gradient">cloud-ready</span> software with a campus-first mindset.
                         </motion.p>
 
