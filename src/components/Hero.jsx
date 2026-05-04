@@ -84,6 +84,8 @@ const Hero = () => {
                         >
                             <span className="text-slate-900">OM</span>{' '}
                             <span className="glow-text">JARIWALA</span>
+                            
+                            <h1>CI/CD Test Successful 🚀</h1>
                         </motion.h1>
 
                         <motion.p
