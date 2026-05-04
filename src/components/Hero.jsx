@@ -84,8 +84,6 @@ const Hero = () => {
                         >
                             <span className="text-slate-900">OM</span>{' '}
                             <span className="glow-text">JARIWALA</span>
-                            
-                            <h1>CI/CD Test Successful 🚀</h1>
                         </motion.h1>
 
                         <motion.p
@@ -94,7 +92,7 @@ const Hero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4 }}
                         >
-                            Building scalable,{' '}
+                            Buil scalable,{' '}
                             <span className="text-gradient">cloud-ready</span> software with a campus-first mindset.
                         </motion.p>
 
